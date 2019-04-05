@@ -60,7 +60,7 @@
             </div> 
             <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbx8J2-pxvQbnPTHxVD7jHWvvX3adAl_EbsmbnYTjCNwosv5U9A/exec">
+                <form  class="contact-form" name="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbyGkXBsYVw3lnSAuoiOMgOeHCoemlbf0h1s0CFrmFSHO4CJafzH/exec">
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
                             <label>Name *</label>
@@ -72,11 +72,11 @@
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="number" class="form-control">
+                            <input type="number" name="phone" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Company Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="company" class="form-control">
                         </div>                        
                     </div>
                     <div class="col-sm-5">
@@ -89,13 +89,16 @@
                             <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
                         </div>                        
                         <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" >Submit Message</button>
                         </div>
                     </div>
                 </form> 
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#contact-page-->
+	
+	
+	
 <!--
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -189,6 +192,10 @@
             </div>
         </div>
     </footer><!--/#footer-->
+	<div style="display:none;" id="thankyou_message">
+	<h2><em>Thanks<em>for contacting us!
+	we will get back to you soon!</h2>
+	</div>
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
